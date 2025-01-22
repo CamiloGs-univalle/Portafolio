@@ -1,33 +1,26 @@
-import { useState } from 'react'
-import reactLogo from '../public/assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Button_whatsapp from './styles/button_interactive/Button'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Portafolio xD</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+      <h1>Johan Camilo García Samboní</h1>
+
+      <h2>Sobre Mí</h2>
+      <p>
+        Soy un tecnólogo en desarrollo de software
+        en formación con más de tres años de experiencia
+        práctica en tecnología y sistemas. Mi enfoque 
+        combina conocimientos técnicos sólidos, creatividad 
+        y un fuerte compromiso con la innovación. He demostrado 
+        excelencia en el mantenimiento de sistemas informáticos, 
+        desarrollo de soluciones personalizadas y la mejora 
+        continua de procesos. Mi objetivo es contribuir al éxito 
+        de organizaciones que valoren la innovación, la precisión y 
+        el impacto social, y estoy preparado para asumir grandes 
+        desafíos tecnológicos
       </p>
+      <Button_whatsapp/>
     </>
   )
 }
